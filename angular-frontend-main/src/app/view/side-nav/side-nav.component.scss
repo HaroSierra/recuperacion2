@@ -1,0 +1,45 @@
+mat-toolbar {
+  color: #ffffff;
+}
+
+mat-sidenav-container {
+  background-color: #424242;
+}
+
+mat-nav-list a {
+  color: #666;
+  text-decoration: none;
+}
+
+.navigation {
+  position: sticky;
+}
+
+.example-container {
+  height: 100%;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.glass {
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba(85, 31, 135, 0.37);
+  backdrop-filter: blur( 7px );
+  -webkit-backdrop-filter: blur( 7px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  
+  position: fixed; /* Fijar el mat-toolbar */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Asegurarse de que esté por encima del resto del contenido */
+}
+
+.navigation {
+  position: sticky; /* Mantener el mat-sidenav-container fijo */
+  top: 0; /* Pegarlo al borde superior */
+}
+
+

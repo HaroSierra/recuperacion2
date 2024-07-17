@@ -1,0 +1,130 @@
+.example-container {
+    height: 100%;
+  }
+  
+  .mat-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .content {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .product-column {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cuadrícula de 3 columnas */
+    gap: 20px; /* Espacio entre las tarjetas */
+  }
+  
+  .order-column {
+    flex: 1;
+    margin-left: 20px; /* Margen a la izquierda */
+    position: sticky; /* Mantener fijo durante el scroll */
+    top: 80px; /* Espacio desde la parte superior */
+    align-self: flex-start; /* Alinear al principio */
+  }
+  
+  .product-card, .order-card {
+    width: 90%;
+    margin: 10px; /* Margen lateral entre tarjetas */
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  .custom-mat-field {
+    width: 100%; /* Asegura que el mat-form-field ocupe todo el ancho disponible */
+    margin-top: 15px;
+  }
+  
+  .custom-mat-select {
+    width: 100%; /* Asegura que el mat-select ocupe todo el ancho disponible */
+  }
+  
+  
+  td {
+    width: 10%;
+  }
+  
+  th {
+    width: 10%;
+    background-color: rgba(32, 178, 214, 0.749);
+  }
+  
+  .red-button, .red-button2 {
+    color: white;
+    background-color: #73e8aeb7;
+    display: flex;
+    width: 100%;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product-info, .order-info {
+    margin-top: 5px; /* Reducido */
+  }
+  
+  .product-card {
+    padding: 15px; /* Reducido */
+  }
+  
+  .mat-card-title {
+    font-size: 19px; /* Reducido */
+  }
+
+  .order-label {
+    margin-bottom: 10px;
+  }
+  
+  .mat-card-content {
+    padding: 10px; /* Reducido */
+  }
+  
+  .product-item {
+    margin-bottom: 5px; /* Reducido */
+  }
+  
+  .order-item {
+    margin-bottom: 10px; /* Reducido */
+  }
+
+  
+
+  @import "~@angular/material/prebuilt-themes/purple-green.css";
+
+.glass {
+    background: rgba(255, 255, 255, 0.382);
+    box-shadow: 0 8px 32px 0 rgba(31, 135, 114, 0.37);
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+
+
+  /* styles.scss (o tu archivo de estilos principal) */
+.small-icon-button {
+  font-size: 18px; /* Ajusta el tamaño del ícono según sea necesario */
+  width: 32px; /* Ajusta el ancho del botón según sea necesario */
+  height: 32px; /* Ajusta la altura del botón según sea necesario */
+  padding: 0; /* Elimina el relleno interno para reducir aún más el tamaño */
+}
+
+.mat-mdc-button-touch-target {
+  padding: -10px;
+}
